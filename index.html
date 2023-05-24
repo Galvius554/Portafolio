@@ -15,16 +15,16 @@
                     <a href="#">Nick</a>
                 </div>
                 <nav id="nav">
-                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#portafolio">PORTAFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
-                 </ul>   
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>   
                 </nav>
-                <div class="nav-responsive">
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </header>
@@ -38,8 +38,6 @@
                 <h1>JULIO MONROY</h1>
                 <h2>Desarrollador de Software</h2>
                 <div class="redes">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-telegram"></i></a>
@@ -50,18 +48,21 @@
         <section id="sobremi" class="sobremi">
             <div class="contenido-seccion">
                 <h2>Sobre Mí</h2>
-                <p><span>Hola, soy Julio Monroy.</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Dolor ipsam rerum harum voluptatibus laudantium quia voluptate,
-                      sequi quibusdam nobis quam quo vel? Nemo harum, 
-                      suscipit aliquid amet ab deleniti tempore.</p>
-                      <div class="fila">
+                <p><span>Hola, soy Julio Monroy.</span>Soy un hombre dedicado, organizado, responsable y
+                    emprendedor, además tengo unas metas bien fijadas para mi
+                    vida y por ende para mi futuro, pensando lo mejor para mi
+                    familia y su bienestar. Mi relación con las demás personas es
+                    extraordinaria, por mi sencillez, tolerancia, claridad y
+                    espontaneidad, me encanta dialogar y no me gusta tener
+                    altercados de ningún tipo con los demás.
+                    En lo profesional me desempeño muy bien, por mi dedicación,
+                    mi esfuerzo y organización, comprobando así que tengo las
+                    aptitudes necesarias para trabajar en grupo o individualmente</p>
+                    <div class="fila">
                         <div class="col">
-                             <h3>Datos Personales</h3>
-                             <ul>
-                                <li>
-                                    <strong>Cumpleaños:</strong>
-                                    23-08-1987
-                                </li>
+                            <h3>Datos Personales</h3>
+                            <ul>
+                            
                                 <li>
                                     <strong>Teléfono:</strong>
                                     +57 3124137073
@@ -76,17 +77,17 @@
                                 </li>
                                 <li>
                                     <strong>Dirección:</strong>
-                                    Calle 10 # 4-24 B. Pailitas, Malaga-Colombia
+                                    Malaga-Colombia
                                 </li>
                                 <li>
                                     <strong>Cargo:</strong>
                                     <span>FREELANCE</span>
                                 </li>
-                             </ul>
+                            </ul>
                         </div>
                         <div class="col">
-                             <h3>Intereses</h3>
-                             <div class="contenedor-intereses">
+                            <h3>Intereses</h3>
+                            <div class="contenedor-intereses">
                                 <div class="interes">
                                     <i class="fa-solid fa-gamepad"></i>
                                     <span>JUEGOS</span>
@@ -234,36 +235,37 @@
                                 e instalacion de cableado estructurado </h4>
                                     <span class="casa">Sena</span>
                                     <span class="fecha">2016 - 2018</span>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Nulla maiores incidunt quas soluta voluptate, similique,
-                                        laboriosam sint corrupti corporis repudiandae ea aperiam
-                                        totam amet assumenda modi accusamus voluptas vero dolore?</p>
+                                    <p> las actividades y procedimientos que se llevan a cabo para asegurar el correcto funcionamiento,
+                                    rendimiento y durabilidad de los equipos informáticos, como computadoras, servidores, impresoras,
+                                    routers, entre otros. En cuanto al diseño e instalación de cableado estructurado, 
+                                    se trata de un sistema de infraestructura de red que proporciona una base sólida y 
+                                    organizada para la transmisión de datos, voz y otros servicios de comunicación en un edificio 
+                                    o recinto.</p>
                                     <div class="conectori">
                                         <div class="circuloi"></div>
                                     </div>
                         </div>
                         <div class="item izq">
-                            <h4>Mantenimiento de equipos de computo, diseño
-                                e instalacion de cableado estructurado </h4>
+                            <h4>Especialización Tecnológica en Gestión de
+                                Seguridad de Bases de Datos </h4>
                                     <span class="casa">Sena</span>
-                                    <span class="fecha">2016 - 2018</span>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Nulla maiores incidunt quas soluta voluptate, similique,
-                                        laboriosam sint corrupti corporis repudiandae ea aperiam
-                                        totam amet assumenda modi accusamus voluptas vero dolore?</p>
+                                    <span class="fecha">2019</span>
+                                    <p> esta especialización proporciona los conocimientos y habilidades
+                                    necesarios para implementar medidas de seguridad eficaces y proteger 
+                                    la información almacenada en bases de datos, garantizando así la confidencialidad,
+                                    integridad y disponibilidad de los datos.</p>
                                     <div class="conectori">
                                         <div class="circuloi"></div>
                                     </div>
                         </div>
                         <div class="item izq">
-                            <h4>Mantenimiento de equipos de computo, diseño
-                                e instalacion de cableado estructurado </h4>
+                            <h4>Analisis y Desarrollo de Software</h4>
                                     <span class="casa">Sena</span>
-                                    <span class="fecha">2016 - 2018</span>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Nulla maiores incidunt quas soluta voluptate, similique,
-                                        laboriosam sint corrupti corporis repudiandae ea aperiam
-                                        totam amet assumenda modi accusamus voluptas vero dolore?</p>
+                                    <span class="fecha">2022 - 2023</span>
+                                    <p>El análisis y desarrollo de software es el proceso de concebir, diseñar,
+                                    implementar y mantener aplicaciones de software. Involucra actividades como
+                                    la recopilación de requisitos, el diseño de la arquitectura, la codificación, 
+                                    las pruebas y la implementación de software</p>
                                     <div class="conectori">
                                         <div class="circuloi"></div>
                                     </div>
@@ -275,39 +277,33 @@
                         <div class="item der">
                             <h4>Digitador</h4>
                                     <span class="casa">Sistemas y Computadores S.A.</span>
-                                    <span class="fecha">2009 - 2011</span>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Nulla maiores incidunt quas soluta voluptate, similique,
-                                        laboriosam sint corrupti corporis repudiandae ea aperiam
-                                        totam amet assumenda modi accusamus voluptas vero dolore?</p>
+                                    <span class="fecha">Noviembre/2009 - Julio/2011</span>
+                                    <p>La confianza de nuestros clientes se refleja en mas de 800 proyectos de sistematización en las áreas de:
+                                        -Automatización para el fortalecimiento de la democracia.
+                                        -Almacenamiento y protección de información para la continuidad de negocios.
+                                        -Sistemas para el control de productos y recaudo.
+                                        -Captura, procesamiento y minería de datos.
+                                        -Educación y cultura.</p>
                                     <div class="conectord">
                                         <div class="circulod"></div>
                                     </div>
                         </div>
                         <div class="item der">
-                            <h4>Digitador</h4>
-                                    <span class="casa">Sistemas y Computadores S.A.</span>
-                                    <span class="fecha">2009 - 2011</span>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Nulla maiores incidunt quas soluta voluptate, similique,
-                                        laboriosam sint corrupti corporis repudiandae ea aperiam
-                                        totam amet assumenda modi accusamus voluptas vero dolore?</p>
+                            <h4>Auxiliar Tecnico</h4>
+                                    <span class="casa">NSTITUTO DEL CORAZON DE
+                                        BUCARAMANGA
+                                        </span>
+                                    <span class="fecha">Junio/2017 - Diciembre/2017</span>
+                                    <p> se dedican a la prevención, diagnóstico y tratamiento de enfermedades 
+                                        cardiovasculares. Estos establecimientos pueden ofrecer una amplia 
+                                        gama de servicios relacionados con la salud cardíaca, que incluyen 
+                                        consultas médicas, pruebas de diagnóstico, intervenciones terapéuticas 
+                                        y cirugía cardiovascular.</p>
                                     <div class="conectord">
                                         <div class="circulod"></div>
                                     </div>
                         </div>
-                        <div class="item der">
-                            <h4>Digitador</h4>
-                                    <span class="casa">Sistemas y Computadores S.A.</span>
-                                    <span class="fecha">2009 - 2011</span>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Nulla maiores incidunt quas soluta voluptate, similique,
-                                        laboriosam sint corrupti corporis repudiandae ea aperiam
-                                        totam amet assumenda modi accusamus voluptas vero dolore?</p>
-                                    <div class="conectord">
-                                        <div class="circulod"></div>
-                                    </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -319,43 +315,29 @@
                     <div class="proyecto">
                         <img src="imagen/p1.jpg" alt="">
                         <div class="overlay">
-                            <h3>Diseño Creativo</h3>
-                            <p>Fotografía</p>
+                            <h3>Sistemas</h3>
+                            <p>Mantenimiento de Computo</p>
                         </div>
                     </div>
                     <div class="proyecto">
                         <img src="imagen/p2.jpg" alt="">
                         <div class="overlay">
                             <h3>Diseño Creativo</h3>
-                            <p>Fotografía</p>
+                            <p>Diseño Web</p>
                         </div>
                     </div>
                     <div class="proyecto">
                         <img src="imagen/p3.jpg" alt="">
                         <div class="overlay">
-                            <h3>Diseño Creativo</h3>
-                            <p>Fotografía</p>
-                        </div>
-                    </div>
-                    <div class="proyecto">
-                        <img src="imagen/p4.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Diseño Creativo</h3>
-                            <p>Fotografía</p>
+                            <h3>Analisis y Desarrollo</h3>
+                            <p>Desarrollo de Aplicaciones</p>
                         </div>
                     </div>
                     <div class="proyecto">
                         <img src="imagen/p5.jpg" alt="">
                         <div class="overlay">
-                            <h3>Diseño Creativo</h3>
-                            <p>Fotografía</p>
-                        </div>
-                    </div>
-                    <div class="proyecto">
-                        <img src="imagen/p6.png" alt="">
-                        <div class="overlay">
-                            <h3>Diseño Creativo</h3>
-                            <p>Fotografía</p>
+                            <h3>Redes</h3>
+                            <p>Diseño e Instalacion</p>
                         </div>
                     </div>
                 </div>
@@ -398,5 +380,16 @@
                 </div>
             </div>
         </section>
+        <footer>
+            <a href="#inicio" class="arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+        </footer>
+        <script src="script.js"></script>
     </body>
 </html>
